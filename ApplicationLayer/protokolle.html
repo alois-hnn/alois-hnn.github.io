@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/application.png"/>
+    <title>Protokolle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Protokolle</h1>
+        <div class="right">
+            <a href="https://github.com">
+                <img src="img/github.png" alt="github">
+            </a>
+            <div id="burger-menu" onclick="navMenu()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </div>  
+    </div>
+    <div id="links">
+        <h3><a class="underline" href="index.html">Übersicht</a></h3>
+        <h3><a class="active" href="protokolle.html">Protokolle</a></h3>
+        <h3><a class="underline" href="header.html">Header</a></h3>
+    </div>
+
+
+    <div class="content scroll" id="content">
+        <p>
+            Die unteren drei Schichten des <a href="https://de.wikipedia.org/wiki/Internetprotokollfamilie#TCP/IP-Referenzmodell" target="_blank">TCP/IP-Modells</a>, die
+            <a href="https://de.wikipedia.org/wiki/Netzzugangsschicht" target="_blank">Netzzugangsschicht</a>, die
+            <a href="https://de.wikipedia.org/wiki/Internetschicht" target="_blank">Internetschicht</a> und die
+            <a href="https://de.wikipedia.org/wiki/Transportschicht" target="_blank">Transportschicht</a>, bilden die Grundstruktur für die Protokolle,
+            die zum Senden von Daten über ein Netzwerk verwendet werden. In der <a href="https://de.wikipedia.org/wiki/Anwendungsschicht" target="_blank">Anwendungsschicht</a>
+            werden die in den unteren drei Schichten festgelegten Regeln weiter verfeinert, um eine Verbindung zwischen bestimmten Computerprogrammen zu ermöglichen. Ein Beispiel
+            hierfür ist <a href="https://de.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank">FTP</a>, eine Programmierschnittstelle für den Austausch von Dateien über ein Netzwerk.
+        </p>
+        <p>
+            Wie diese Beispiele verdeutlichen, ermöglicht TCP/IP die Kommunikation zwischen verschiedenen Computeranwendungen über seine definierten Protokolle auf der <a href="https://de.wikipedia.org/wiki/Anwendungsschicht" target="_blank">Anwendungsschicht</a>. Die Protokolle der Anwendungsschicht haben einen großen Einfluss auf den Betrieb eines Netzes, da sie die Art und Weise der Interaktion zwischen den Anwendungen bestimmen. Es ist wichtig, sich über die verwendeten Protokolle auf dem Laufenden zu halten und solche zu vermeiden, die veraltet sind oder als unsicher gelten. So sind beispielsweise das <a href="https://de.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank">File Transfer Protocol (FTP)</a> und <a href="https://de.wikipedia.org/wiki/Telnet" target="_blank">Telnet</a> Beispiele für Protokolle, die aufgrund potenzieller Sicherheitsrisiken und Anfälligkeiten für Angriffe nicht verwendet werden sollten (De Paz, 2017).
+            Außerdem sollten stattdessen modernere Protokolle wie <a href="https://de.wikipedia.org/wiki/Secure_File_Transfer_Protocol" target="_blank">Secure File Transfer Protocol (SFTP)</a> und <a href="https://de.wikipedia.org/wiki/Secure_Shell" target="_blank">Secure Shell (SSH)</a> verwendet werden, um die Sicherheit zu gewährleisten. Es ist also wichtig, nur die aktuellsten Protokolle zu verwenden, damit die Netzwerke optimal und sicher funktionieren.
+        </p>
+        <p class="src">
+            De Paz, A. (2017, April 03). Die 7 wichtigsten Arten von Netzwerkprotokollen. Abgerufen von https://www.liquidweb.com/blog/the-7-most-important-types-of-network-protocols/
+        </p>
+        <p>
+        Die Anwendungsschicht ist verantwortlich für die Bereitstellung einer Plattform für High-Level-Anwendungen wie E-Mail,
+        Dateiübertragung und World Wide Web, um eine durchgängige Kommunikation zu gewährleisten. Ein Beispiel für eine Verbindung der Anwendungsschicht
+        ist eine Web-Browsing-Sitzung, bei der ein Benutzer Daten von Websites anfordert und empfängt.
+        </p>
+        <p>
+        Das Transmission Control Protocol / Internet Protocol (TCP/IP) ist ein grundlegendes Modell für die Datenübertragung, das heute in praktisch der
+        gesamten digitalen Kommunikation verwendet wird. Es besteht aus einem hierarchischen System von Schichten, das die Datenkommunikation in überschaubaren und
+        verständlichen Anweisungen organisiert.
+        </p>
+        <p>
+            Die <a href="https://de.wikipedia.org/wiki/Anwendungsschicht" target="_blank">Anwendungsschicht</a> bildet die oberste Ebene des
+            <a href="https://de.wikipedia.org/wiki/Transmission_Control_Protocol/Internet_Protocol" target="_blank">TCP/IP-Modells</a> und ist
+            für die Aktivitäten im Zusammenhang mit bestimmten Protokollen (z. B. <a href="https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a>,
+            <a href="https://de.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank">FTP</a>, <a href="https://de.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" target="_blank">SMTP</a>)
+            zuständig. Ein Beispiel dafür, wie die Anwendungsschicht funktioniert, sind zwei Computer. Mit Hilfe eines <a href="https://de.wikipedia.org/wiki/Web-Browser" target="_blank">Webbrowsers</a>
+            muss der Client eine Webseite vom Server "herunterladen". Dazu erstellt der Client ein HTTP-Anforderungspaket, das die URL der Webseite enthält.
+            Dieses Anforderungspaket wird an den Server gesendet, der ein HTTP-Antwortpaket mit der Webseite an den Client zurücksendet (Halsall, 2020). 
+            
+            Über eine <a href="https://de.wikipedia.org/wiki/Programmierschnittstelle" target="_blank">Programmierschnittstelle</a> (API) kann auf das zugrunde
+            liegende <a href="https://de.wikipedia.org/wiki/Transmission_Control_Protocol/Internet_Protocol" target="_blank">TCP/IP-Modell</a> zugegriffen werden,
+            so dass Entwickler <a href="https://de.wikipedia.org/wiki/Web-Anwendung" target="_blank">Web</a>- oder
+            <a href="https://de.wikipedia.org/wiki/Netzwerkanwendung" target="_blank">Netzwerkanwendungen</a> erstellen können.
+            Die <a href="https://de.wikipedia.org/wiki/WinSock" target="_blank">WinSock-API</a> von Microsoft ist ein weit verbreitetes Beispiel für eine
+            Programmierschnittstelle zum TCP/IP-Modell (Schneider, 2019).
+        </p>
+
+        <p class="src">
+        Halsall, F. (2020, Mai 4). Das OSI 7-Schichten-Modell und das TCPIP-Modell. Abgerufen von https://www.webopedia.com/DidYouKnow/Internet/osi_tcpip_model.asp.
+        </br>
+        Schneider, G. (2019, October 2). Eine kurze Einführung in TCP/IP und die Anwendungsschicht. Abgerufen von https://www.geeksforgeeks.org/a-brief-introduction-to-tcpip-and-application-layer/
+        </p>
+        <p>
+        Auf der Anwendungsschicht werden Protokolle wie Hypertext Transfer Protocol (HTTP), Simple Mail Transfer Protocol (SMTP), File Transfer Protocol (FTP) und
+        Domain Name System (DNS) zur Interaktion mit Benutzern und anderen Anwendungen verwendet.
+        </p>
+        <p>
+        So stellt beispielsweise eine Anwendung auf einem iPad über HTTP eine Verbindung zu einer Website her, und die Website verwendet <a href="https://de.wikipedia.org/wiki/SMTP" target="_blank">SMTP</a>,
+        um eine E-Mail an ihre Benutzer zu senden. Um diese Verbindung herzustellen, muss die Anwendungsschicht die spezifische <a href="https://de.wikipedia.org/wiki/IP-Adresse" target="_blank">IP-Adresse</a> der Website oder
+        des E-Mail-Servers kennen, und das TCP/IP-Modell liefert die Informationen, die für die Kodierung und <a href="https://de.wikipedia.org/wiki/Dekodierung" target="_blank">Dekodierung</a> der Daten erforderlich sind.
+        Darüber hinaus kann eine Programmierschnittstelle verwendet werden, um mit dem TCP/IP-Modell zu interagieren und Daten zu senden und zu empfangen.
+        Die <a href="https://en.wikipedia.org/wiki/Berkeley_sockets" target="_blank">Berkeley Sockets API</a> ist eine von vielen solchen Programmierschnittstellen, die Programmen den Zugriff auf das TCP/IP-Modell ermöglicht. Das TCP/IP-Modell ist somit grundlegend für unser Verständnis der Kommunikation im Internet. 
+        </p>
+
+        <p class="src">
+        (MLA-Zitat für diesen Absatz: LeMay, Brian, et al. Operating Systems: Internals and Design Principles. Ninth ed., Pearson Education, 2017.)
+        </p>
+
+        <div class="full-height"></div>
+
+        <div class="footer">
+            <div>
+                <h5 style="margin: 0 0 5px;">Application Layer</h5>
+                <div style="font-size: 10px;">
+                    <a class="underline" href="https://github.com/alois-hnn">Alois</a> und
+                    <a class="underline" href="https://github.com/jann-amh">Jann</a></span></br>
+                    <p style="margin: 5px 0 0;">Informatik LK Q2</p>
+                </div>
+            </div>
+            <div>
+                &#169;
+                <script>document.write( new Date().getFullYear() );</script>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

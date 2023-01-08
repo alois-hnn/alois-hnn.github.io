@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/application.png"/>
+    <title>Header</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Header</h1>
+        <div class="right">
+            <a href="https://github.com">
+                <img src="img/github.png" alt="github">
+            </a>
+            <div id="burger-menu" onclick="navMenu()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </div>  
+    </div>
+    <div id="links">
+        <h3><a class="underline" href="index.html">Übersicht</a></h3>
+        <h3><a class="underline" href="protokolle.html">Protokolle</a></h3>
+        <h3><a class="active" href="header.html">Header</a></h3>
+    </div>
+
+
+    <div class="content scroll" id="content">
+        
+        <p>
+        
+            Jedes <a href="https://de.wikipedia.org/wiki/Datenpaket">Datenpaket</a> besteht aus einem <a href="https://de.wikipedia.org/wiki/Header">Header</a>
+            und einem <a href="https://de.wikipedia.org/wiki/Payload">Payload</a>. Der Header enthält Informationen über den <a href="https://de.wikipedia.org/wiki/Server">Server</a>
+            (Sender- und Empfängeradressen), sowie über den Payload. Auch welche <a href="protokolle.html">Protokolle</a> zur <a href="https://de.wikipedia.org/wiki/Verbindung">Verbindung</a> verwendet werden,
+            wird durch den Header ersteinmal definiert. Die Umsetzung erfolgt später durch die anderen Schichten der Modelle.
+            Die <a href="index.html">Anwendungsschicht</a> charakterisiert somit die Daten. Sie stellt den Payload für den
+            <a href="https://de.wikipedia.org/wiki/Benutzer">Nutzer</a> zur Verfügung und bestimmt wie dieser zwischen Client und Server
+            <a href="https://de.wikipedia.org/wiki/Datenaustausch">ausgetauscht</a> werden soll. Die Umsetzung erfolgt schließlich basierend auf diesen Informationen, auf den anderen Schichten.
+        
+        </p>
+
+        <p>
+            <div class="img-wrapper"><img src="img/httpsheader.png" alt="httpsheader"></div>
+        </p>
+        
+        <p>
+
+            Der Screenshot stammt aus den Dev-Tools einer Website und zeigt im Grunde, was die Anwendungsschicht macht und welche Information auf
+            welche Art und Weise verarbeitet werden. <br> Zu den generellen Informationen zählen die Request URL, sprich
+            das was man in der Adresszeile des Web-Browsers eingibt, Statuscodes, sowie die IP-Adresse des Webservers. Zu diesem findet man im Response Header weitere Informationen. 
+            So zeigt der Punkt Server welcher Webserver verwendet wird, um welchen Content-Type es sich handelt, in diesem Fall der Seitenquelltext und viele weitere relevante Parameter, welche für den Client wichtig sind,
+            um mit dem Server über das Netzwerk kommunizieren zu können.<br>
+            Über den Client liefert der Request Header Informationen. Welcher Content-Type wird als Response akzeptiert? Welche Sprachen soll dieser haben?
+            Welches Betriebssystem und Browser wird verwendet?
+
+        </p>
+
+        <p>
+            <div class="img-wrapper"><img src="img/socketheader.png" alt="socketheader"></div>
+        </p>
+
+        <p>
+            Dieser Header ist ein weiteres Beispiel, allerdings für eine <a href="https://de.wikipedia.org/wiki/WebSocket">Websocket Verbindung</a>.
+            Auch für diese muss festgelegt werden, wie die Kommunikation ablaufen soll. Zudem zeigt der Browser nicht nur Informationen zur <a href="https://de.wikipedia.org/wiki/Client-Server-Modell#Definitionen">Request</a>, sondern auch zur <a href="https://de.wikipedia.org/wiki/Client-Server-Modell#Definitionen">Response</a>.
+            Dadurch ist es möglich die Art und den Erfolg des Datenaustauschs von Server und Client <a href="https://de.wikipedia.org/wiki/Bidirektional">bidirektional</a> nachzuvollziehen. 
+        </p>
+
+        <div class="full-height"></div>
+
+        <div class="footer">
+            <div>
+                <h5 style="margin: 0 0 5px;">Application Layer</h5>
+                <div style="font-size: 10px;">
+                    <a class="underline" href="https://github.com/alois-hnn">Alois</a> und
+                    <a class="underline" href="https://github.com/jann-amh">Jann</a></span></br>
+                    <p style="margin: 5px 0 0;">Informatik LK Q2</p>
+                </div>
+            </div>
+            <div>
+                &#169;
+                <script>document.write( new Date().getFullYear() );</script>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

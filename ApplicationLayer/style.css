@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #d9d9e3;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+
+a, a.underline {
+    text-decoration: none;
+}
+
+a.underline:hover {
+    text-decoration: underline !important;
+}
+
+a.active {
+    text-decoration: underline !important;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+p.src {
+    font-size: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+/*
+#20232a
+#0d82ec
+#d9d9e3
+*/
+
+html, body {
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #1a1b1f;
+    padding: 0.75% 15% 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 95px auto;
+    grid-template-areas:
+    "header"
+    "content";
+}
+
+.header {
+    grid-area: header;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#burger-menu {
+    height: 45px;
+    width: 50px;
+    margin-left: 25px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    transition: background 0.2s ease-in;
+}
+
+#burger-menu:hover {
+    background: #0d82ec !important;
+}
+
+.burger-line:first-child {
+    margin: 0;
+}
+
+.burger-line {
+    width: 65%;
+    height: 5px;
+    background: #d9d9e3;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#links {
+    grid-area: content;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+}
+
+.header, .content {
+    padding: 0 10px;
+}
+
+.header .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img, .header a {
+    height: 30px;
+}
+
+.content {
+    grid-area: content;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 98%;
+    display: flex;
+    flex-flow: column;
+    
+}
+
+.content > * {
+    flex-shrink: 0;
+}
+
+.content a {
+    text-decoration: underline;
+}
+
+.content .img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .img-wrapper img {
+    width: 80%;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 3px;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 3px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: rgba(124, 124, 124, 0);
+    border-radius: 5px;
+}
+
+.scroll-active::-webkit-scrollbar-thumb {
+    background: rgb(124, 124, 124);
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.card {
+    position: absolut;
+    width: 250px;
+    height: 320px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.front, .back {
+    transition: all .3s linear;
+    box-shadow: rgba(13, 130, 236, 0.4) 5px 5px, rgba(13, 130, 236, 0.3) 10px 10px, rgba(13, 130, 236, 0.2) 15px 15px, rgba(13, 130, 236, 0.1) 20px 20px, rgba(13, 130, 236, 0.05) 25px 25px;
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #20232a;
+    text-align: center;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transform: rotateY(0deg);
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #0d82ec;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back div {
+    font-size: 13px;
+    line-height: 140%;
+}
+
+.card:hover > .front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover > .back {
+    transform: rotateY(0deg);
+}
+
+.full-height {
+    flex-grow: 1;
+}
+
+.footer {
+    height: 80px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+    body {
+        padding: 0.5% 10% 0;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    
+    body {
+        padding: 0 2.5%;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+    
+}

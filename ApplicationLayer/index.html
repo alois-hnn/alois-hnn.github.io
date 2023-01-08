@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/application.png"/>
+    <title>Übersicht</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Übersicht</h1>
+        <div class="right">
+            <a href="https://github.com">
+                <img src="img/github.png" alt="github">
+            </a>
+            <div id="burger-menu" onclick="navMenu()">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </div> 
+    </div>
+    <div id="links">
+        <h3><a class="active" href="index.html">Übersicht</a></h3>
+        <h3><a class="underline" href="protokolle.html">Protokolle</a></h3>
+        <h3><a class="underline" href="header.html">Header</a></h3>
+    </div>
+
+
+    <div class="content scroll" id="content">
+
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+                    <h2>Application</h2>
+                </div>
+                <div class="back">
+                    <div>
+                        Die <a href="#Anwendungsschicht">Anwendungsschicht</a> ist die oberste Schicht im <a href="https://de.wikipedia.org/wiki/OSI-Modell" target="_blank">OSI-Modell</a> und verantwortlich für die Kommunikation zwischen Anwendungen auf verschiedenen Endgeräten. Sie stellt die Schnittstelle zwischen Software und Netzwerkinfrastruktur dar und überträgt Daten zwischen Anwendungen. Die Anwendungsschicht definiert auch das Format der übertragenen Daten und die <a href="protokolle.html">Protokolle</a>, die von Anwendungen zur Kommunikation verwendet werden.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <h2>Presentation</h2>
+                </div>
+                <div class="back">
+                    <div>
+                        Die <a href="https://de.wikipedia.org/wiki/Pr%C3%A4sentationsschicht" target="_blank">Präsentationsschicht</a>, die sich auf der sechsten Schicht des <a href="https://de.wikipedia.org/wiki/OSI-Modell" target="_blank">OSI-Modells</a> befindet, ist für die Darstellung und Übersetzung der Daten, die sinnvolle Nutzung der Daten und die Vorbereitung einer gemeinsamen Schnittstelle zuständig. Diese Schicht ist von großer Bedeutung, da sie dem Computer die Kommunikation mit verschiedenen Netzsystemen ermöglicht und sicherstellt, dass die Daten dem Benutzer korrekt präsentiert werden.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="front">
+                    <h2>Session</h2>
+                </div>
+                <div class="back">
+                    <div>
+                        Die <a href="https://de.wikipedia.org/wiki/Sitzungsschicht" target="_blank">Sitzungsschicht</a> des <a href="https://de.wikipedia.org/wiki/OSI-Modell" target="_blank">OSI-Modells</a> ist verantwortlich für die Prozess-zu-Prozess-Kommunikation und koordiniert den Datentransport zwischen zwei Anwendungen in einem Netz. Sie stellt Protokolle für die Dialogsteuerung und Sitzungsverwaltung bereit und trägt dazu bei, dass Daten sicher und schnell fließen. Sie hilft auch, Daten sowohl auf dem Computer als auch im Netz zu schützen.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a id="Anwendungsschicht" style="text-decoration: none;"><h2>Die Anwendungsschicht</h2></a>
+
+        Die Anwendungsschicht ist die höchste Schicht des TCP/IP-Modells und für die Bereitstellung von Diensten
+        für den Benutzer zuständig. Auf dieser Schicht interagieren die Benutzer mit dem Netz, einschließlich Anwendungsprogrammen wie Web-Browsing und E-Mail-Versand. Sie ist dafür
+        verantwortlich, die Bedürfnisse des Benutzers in eine Form zu übersetzen, die die unteren Schichten des Modells verstehen können, so dass Benutzeranfragen an entfernte
+        Computer im Netzwerk gesendet werden können. Nach Ouellette "übersetzt die Anwendungsschicht die Benutzeranfragen in Netzwerkaufrufe und die Antwort des Netzwerks in eine Form,
+        die der Benutzer verstehen kann". Auf diese Weise ist die Anwendungsschicht für die Benutzer unerlässlich, um auf die im Netz verfügbaren Daten und Dienste zuzugreifen.
+
+        <p>
+        Die Anwendungsschicht des TCP/IP-Modells ist im Wesentlichen die Schicht, die es den Anwendungen ermöglicht, miteinander und mit dem zugrunde liegenden Netz zu kommunizieren.
+        Sie organisiert, interpretiert und regelt die Kommunikation zwischen Anwendungen und Netzen. Diese Schicht ist von entscheidender Bedeutung, da sie es den Benutzern ermöglicht,
+        auf das Netz zuzugreifen und Daten über dieses Netz auszutauschen, da die Anwendungen auf dieser Schicht Nachrichten senden und empfangen. Wenn die Benutzer verstehen,
+        wie die Anwendungsschicht funktioniert, können sie die Vorteile der verschiedenen Protokolle und Kommunikationsoptionen nutzen, die ihnen zur Verfügung stehen.
+        </p>
+        <p class="src">
+        Ouellette, D. (2008). Das TCP/IP-Handbuch: Ein umfassendes, illustriertes Nachschlagewerk zu Internetprotokollen. New Riders.
+        </p>
+        
+        <div class="full-height"></div>
+
+        <div class="footer">
+            <div>
+                <h5 style="margin: 0 0 5px;">Application Layer</h5>
+                <div style="font-size: 10px;">
+                    <a class="underline" href="https://github.com/alois-hnn">Alois</a> und
+                    <a class="underline" href="https://github.com/jann-amh">Jann</a></span></br>
+                    <p style="margin: 5px 0 0;">Informatik LK Q2</p>
+                </div>
+            </div>
+            <div>
+                &#169;
+                <script>document.write( new Date().getFullYear() );</script>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
